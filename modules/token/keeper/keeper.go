@@ -12,7 +12,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/irisnet/irismod/modules/token/types"
+	"github.com/furya-official/furymod/modules/token/types"
 )
 
 type Keeper struct {

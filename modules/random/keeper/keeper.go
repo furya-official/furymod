@@ -10,7 +10,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/irisnet/irismod/modules/random/types"
+	"github.com/furya-official/furymod/modules/random/types"
 )
 
 // Keeper defines the random module Keeper

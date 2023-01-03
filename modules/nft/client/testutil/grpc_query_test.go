@@ -18,7 +18,7 @@ import (
 	nftcli "github.com/irisnet/irismod/modules/nft/client/cli"
 	nfttestutil "github.com/irisnet/irismod/modules/nft/client/testutil"
 	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/simapp"
+	"github.com/furya-official/furymod/simapp"
 )
 
 type IntegrationTestSuite struct {
@@ -103,7 +103,7 @@ func (s *IntegrationTestSuite) TestNft() {
 	denomID := gjson.Get(txResp.RawLog, "0.events.0.attributes.0.value").String()
 
 	//------test GetCmdQueryDenom()-------------
-	url := fmt.Sprintf("%s/irismod/nft/denoms/%s", baseURL, denomID)
+	url := fmt.Sprintf("%s/furymod/nft/denoms/%s", baseURL, denomID)
 	resp, err := rest.GetRequest(url)
 	respType = proto.Message(&nfttypes.QueryDenomResponse{})
 	s.Require().NoError(err)
@@ -120,7 +120,7 @@ func (s *IntegrationTestSuite) TestNft() {
 	s.Require().Equal(updateRestricted, denomItem.Denom.UpdateRestricted)
 
 	//------test GetCmdQueryDenoms()-------------
-	url = fmt.Sprintf("%s/irismod/nft/denoms", baseURL)
+	url = fmt.Sprintf("%s/furymod/nft/denoms", baseURL)
 	resp, err = rest.GetRequest(url)
 	respType = proto.Message(&nfttypes.QueryDenomsResponse{})
 	s.Require().NoError(err)
@@ -151,7 +151,7 @@ func (s *IntegrationTestSuite) TestNft() {
 	s.Require().Equal(expectedCode, txResp.Code)
 
 	//------test GetCmdQuerySupply()-------------
-	url = fmt.Sprintf("%s/irismod/nft/collections/%s/supply", baseURL, denomID)
+	url = fmt.Sprintf("%s/furymod/nft/collections/%s/supply", baseURL, denomID)
 	resp, err = rest.GetRequest(url)
 	respType = proto.Message(&nfttypes.QuerySupplyResponse{})
 	s.Require().NoError(err)
@@ -160,7 +160,7 @@ func (s *IntegrationTestSuite) TestNft() {
 	s.Require().Equal(uint64(1), supplyResp.Amount)
 
 	//------test GetCmdQueryNFT()-------------
-	url = fmt.Sprintf("%s/irismod/nft/nfts/%s/%s", baseURL, denomID, tokenID)
+	url = fmt.Sprintf("%s/furymod/nft/nfts/%s/%s", baseURL, denomID, tokenID)
 	resp, err = rest.GetRequest(url)
 	respType = proto.Message(&nfttypes.QueryNFTResponse{})
 	s.Require().NoError(err)
@@ -174,7 +174,7 @@ func (s *IntegrationTestSuite) TestNft() {
 	s.Require().Equal(from.String(), nftItem.NFT.Owner)
 
 	//------test GetCmdQueryOwner()-------------
-	url = fmt.Sprintf("%s/irismod/nft/nfts?owner=%s", baseURL, from.String())
+	url = fmt.Sprintf("%s/furymod/nft/nfts?owner=%s", baseURL, from.String())
 	resp, err = rest.GetRequest(url)
 	respType = proto.Message(&nfttypes.QueryNFTsOfOwnerResponse{})
 	s.Require().NoError(err)
@@ -185,7 +185,7 @@ func (s *IntegrationTestSuite) TestNft() {
 	s.Require().Equal(tokenID, ownerResp.Owner.IDCollections[0].TokenIds[0])
 
 	//------test GetCmdQueryCollection()-------------
-	url = fmt.Sprintf("%s/irismod/nft/collections/%s", baseURL, denomID)
+	url = fmt.Sprintf("%s/furymod/nft/collections/%s", baseURL, denomID)
 	resp, err = rest.GetRequest(url)
 	respType = proto.Message(&nfttypes.QueryCollectionResponse{})
 	s.Require().NoError(err)

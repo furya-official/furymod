@@ -14,7 +14,7 @@ import (
 
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/irisnet/irismod/modules/service/types"
+	"github.com/furya-official/furymod/modules/service/types"
 )
 
 var _ types.QueryServer = Keeper{}

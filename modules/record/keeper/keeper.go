@@ -13,7 +13,7 @@ import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/irisnet/irismod/modules/record/types"
+	"github.com/furya-official/furymod/modules/record/types"
 )
 
 // Keeper of the record store

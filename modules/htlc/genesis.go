@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 
-	"github.com/irisnet/irismod/modules/htlc/keeper"
-	"github.com/irisnet/irismod/modules/htlc/types"
+	"github.com/furya-official/furymod/modules/htlc/keeper"
+	"github.com/furya-official/furymod/modules/htlc/types"
 )
 
 // InitGenesis stores the genesis state

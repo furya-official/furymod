@@ -13,8 +13,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/network"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	htlccli "github.com/irisnet/irismod/modules/htlc/client/cli"
-	htlctestutil "github.com/irisnet/irismod/modules/htlc/client/testutil"
+	htlccli "github.com/furya-official/furymod/modules/htlc/client/cli"
+	htlctestutil "github.com/furya-official/furymod/modules/htlc/client/testutil"
 	"github.com/irisnet/irismod/simapp"
 )
 

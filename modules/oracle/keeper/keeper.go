@@ -16,8 +16,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/irisnet/irismod/modules/oracle/types"
-	serviceexported "github.com/irisnet/irismod/modules/service/exported"
+	"github.com/furya-official/furymod/modules/oracle/types"
+	serviceexported "github.com/furya-official/furymod/modules/service/exported"
 )
 
 // Keeper defines a struct for the oracle keeper

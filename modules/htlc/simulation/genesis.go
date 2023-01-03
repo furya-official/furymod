@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/irisnet/irismod/modules/htlc/types"
+	"github.com/furya-official/furymod/modules/htlc/types"
 )
 
 var (

@@ -6,8 +6,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/irisnet/irismod/modules/random/keeper"
-	"github.com/irisnet/irismod/modules/random/types"
+	"github.com/furya-official/furymod/modules/random/keeper"
+	"github.com/furya-official/furymod/modules/random/types"
 )
 
 // InitGenesis stores the genesis state

@@ -8,7 +8,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/irisnet/irismod/modules/service/types"
+	"github.com/furya-official/furymod/modules/service/types"
 )
 
 // GetExchangedPrice gets the exchanged price for the specified consumer and binding

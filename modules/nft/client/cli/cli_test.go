@@ -17,7 +17,7 @@ import (
 	nftcli "github.com/irisnet/irismod/modules/nft/client/cli"
 	nfttestutil "github.com/irisnet/irismod/modules/nft/client/testutil"
 	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/simapp"
+	"github.com/furya-official/furymod/simapp"
 )
 
 type IntegrationTestSuite struct {

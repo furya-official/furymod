@@ -9,7 +9,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govv1 "github.com/cosmos/cosmos-sdk/x/gov/types/v1"
 
-	"github.com/irisnet/irismod/modules/farm/types"
+	"github.com/furya-official/furymod/modules/farm/types"
 )
 
 type msgServer struct {

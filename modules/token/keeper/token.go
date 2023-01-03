@@ -9,7 +9,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	"github.com/irisnet/irismod/modules/token/types"
+	"github.com/furya-official/furymod/modules/token/types"
 )
 
 // GetTokens returns all existing tokens

@@ -11,7 +11,7 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/irisnet/irismod/modules/htlc/types"
+	"github.com/furya-official/furymod/modules/htlc/types"
 )
 
 // Keeper defines the HTLC keeper

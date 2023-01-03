@@ -12,8 +12,8 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	v1 "github.com/irisnet/irismod/modules/coinswap/migrations/v1"
-	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
+	v1 "github.com/furya-official/furymod/modules/coinswap/migrations/v1"
+	coinswaptypes "github.com/furya-official/furymod/modules/coinswap/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

@@ -19,10 +19,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/irisnet/irismod/modules/random/client/cli"
-	"github.com/irisnet/irismod/modules/random/keeper"
-	"github.com/irisnet/irismod/modules/random/simulation"
-	"github.com/irisnet/irismod/modules/random/types"
+	"github.com/furya-official/furymod/modules/random/client/cli"
+	"github.com/furya-official/furymod/modules/random/keeper"
+	"github.com/furya-official/furymod/modules/random/simulation"
+	"github.com/furya-official/furymod/modules/random/types"
 )
 
 var (

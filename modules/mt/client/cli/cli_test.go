@@ -17,7 +17,7 @@ import (
 	mtcli "github.com/irisnet/irismod/modules/mt/client/cli"
 	mttestutil "github.com/irisnet/irismod/modules/mt/client/testutil"
 	mttypes "github.com/irisnet/irismod/modules/mt/types"
-	"github.com/irisnet/irismod/simapp"
+	"github.com/furya-official/furymod/simapp"
 )
 
 type IntegrationTestSuite struct {

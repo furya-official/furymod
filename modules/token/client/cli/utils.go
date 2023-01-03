@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	"github.com/irisnet/irismod/modules/token/types"
+	"github.com/furya-official/furymod/modules/token/types"
 )
 
 // queryTokenFees retrieves the fees of issuance and minting for the specified symbol

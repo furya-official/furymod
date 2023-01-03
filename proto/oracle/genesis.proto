@@ -5,7 +5,7 @@ import "oracle/oracle.proto";
 import "service/service.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/irisnet/irismod/modules/oracle/types";
+option go_package = "github.com/furya-official/furymod/modules/oracle/types";
 
 // GenesisState defines the oracle module's genesis state
 message GenesisState {

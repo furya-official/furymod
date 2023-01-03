@@ -5,7 +5,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/irisnet/irismod/modules/htlc/types"
+	"github.com/furya-official/furymod/modules/htlc/types"
 )
 
 // ParamKeyTable for htlc module

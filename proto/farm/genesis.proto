@@ -4,7 +4,7 @@ package irismod.farm;
 import "gogoproto/gogo.proto";
 import "farm/farm.proto";
 
-option go_package = "github.com/irisnet/irismod/modules/farm/types";
+option go_package = "github.com/furya-official/furymod/modules/farm/types";
 
 message GenesisState {
   Params params = 1 [ (gogoproto.nullable) = false ];

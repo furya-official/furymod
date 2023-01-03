@@ -1,7 +1,7 @@
 package exported
 
 import (
-	"github.com/irisnet/irismod/modules/service/types"
+	"github.com/furya-official/furymod/modules/service/types"
 )
 
 type (

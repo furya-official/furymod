@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/irisnet/irismod/modules/token/keeper"
-	"github.com/irisnet/irismod/modules/token/types"
+	"github.com/furya-official/furymod/modules/token/keeper"
+	"github.com/furya-official/furymod/modules/token/types"
 )
 
 // NewHandler handles all "token" type messages.

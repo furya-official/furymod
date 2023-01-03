@@ -19,10 +19,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/irisnet/irismod/modules/farm/client/cli"
-	"github.com/irisnet/irismod/modules/farm/keeper"
-	"github.com/irisnet/irismod/modules/farm/simulation"
-	"github.com/irisnet/irismod/modules/farm/types"
+	"github.com/furya-official/furymod/modules/farm/client/cli"
+	"github.com/furya-official/furymod/modules/farm/keeper"
+	"github.com/furya-official/furymod/modules/farm/simulation"
+	"github.com/furya-official/furymod/modules/farm/types"
 )
 
 var (

@@ -3,7 +3,7 @@ package cli
 import (
 	flag "github.com/spf13/pflag"
 
-	randomtypes "github.com/irisnet/irismod/modules/random/types"
+	randomtypes "github.com/furya-official/furymod/modules/random/types"
 )
 
 const (

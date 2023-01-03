@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	oraclecli "github.com/irisnet/irismod/modules/oracle/client/cli"
+	oraclecli "github.com/furya-official/furymod/modules/oracle/client/cli"
 )
 
 // MsgRedelegateExec creates a redelegate message.

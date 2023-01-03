@@ -3,7 +3,7 @@ package irismod.token;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/irisnet/irismod/modules/token/types";
+option go_package = "github.com/furya-official/furymod/modules/token/types";
 option (gogoproto.goproto_getters_all) = false;
 
 // Msg defines the oracle Msg service

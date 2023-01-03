@@ -12,12 +12,12 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/rest"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	oraclecli "github.com/irisnet/irismod/modules/oracle/client/cli"
-	oracletestutil "github.com/irisnet/irismod/modules/oracle/client/testutil"
-	oracletypes "github.com/irisnet/irismod/modules/oracle/types"
-	servicecli "github.com/irisnet/irismod/modules/service/client/cli"
-	servicetestutil "github.com/irisnet/irismod/modules/service/client/testutil"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	oraclecli "github.com/furya-official/furymod/modules/oracle/client/cli"
+	oracletestutil "github.com/furya-official/furymod/modules/oracle/client/testutil"
+	oracletypes "github.com/furya-official/furymod/modules/oracle/types"
+	servicecli "github.com/furya-official/furymod/modules/service/client/cli"
+	servicetestutil "github.com/furya-official/furymod/modules/service/client/testutil"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

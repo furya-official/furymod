@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	farmcli "github.com/irisnet/irismod/modules/farm/client/cli"
+	farmcli "github.com/furya-official/furymod/modules/farm/client/cli"
 )
 
 // CreateFarmPoolExec creates a redelegate message.

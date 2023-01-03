@@ -31,7 +31,7 @@ func TestMsgTransferNFTValidateBasicMethod(t *testing.T) {
 func TestMsgTransferNFTGetSignBytesMethod(t *testing.T) {
 	newMsgTransferNFT := types.NewMsgTransferNFT(denomID, denom, id, tokenURI, uriHash, tokenData, address.String(), address2.String())
 	sortedBytes := newMsgTransferNFT.GetSignBytes()
-	expected := `{"type":"irismod/nft/MsgTransferNFT","value":{"data":"https://google.com/token-1.json","denom_id":"denom","id":"denom","name":"id1","recipient":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgp0ctjdj","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq","uri":"https://google.com/token-1.json","uri_hash":"uriHash"}}`
+	expected := `{"type":"furymod/nft/MsgTransferNFT","value":{"data":"https://google.com/token-1.json","denom_id":"denom","id":"denom","name":"id1","recipient":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgp0ctjdj","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq","uri":"https://google.com/token-1.json","uri_hash":"uriHash"}}`
 	require.Equal(t, expected, string(sortedBytes))
 }
 
@@ -64,7 +64,7 @@ func TestMsgEditNFTValidateBasicMethod(t *testing.T) {
 func TestMsgEditNFTGetSignBytesMethod(t *testing.T) {
 	newMsgEditNFT := types.NewMsgEditNFT(id, denom, nftName, tokenURI, uriHash, tokenData, address.String())
 	sortedBytes := newMsgEditNFT.GetSignBytes()
-	expected := `{"type":"irismod/nft/MsgEditNFT","value":{"data":"https://google.com/token-1.json","denom_id":"denom","id":"id1","name":"report","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq","uri":"https://google.com/token-1.json","uri_hash":"uriHash"}}`
+	expected := `{"type":"furymod/nft/MsgEditNFT","value":{"data":"https://google.com/token-1.json","denom_id":"denom","id":"id1","name":"report","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq","uri":"https://google.com/token-1.json","uri_hash":"uriHash"}}`
 	require.Equal(t, expected, string(sortedBytes))
 }
 
@@ -96,7 +96,7 @@ func TestMsgMsgMintNFTValidateBasicMethod(t *testing.T) {
 func TestMsgMintNFTGetSignBytesMethod(t *testing.T) {
 	newMsgMintNFT := types.NewMsgMintNFT(id, denom, nftName, tokenURI, uriHash, tokenData, address.String(), address2.String())
 	sortedBytes := newMsgMintNFT.GetSignBytes()
-	expected := `{"type":"irismod/nft/MsgMintNFT","value":{"data":"https://google.com/token-1.json","denom_id":"denom","id":"id1","name":"report","recipient":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgp0ctjdj","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq","uri":"https://google.com/token-1.json","uri_hash":"uriHash"}}`
+	expected := `{"type":"furymod/nft/MsgMintNFT","value":{"data":"https://google.com/token-1.json","denom_id":"denom","id":"id1","name":"report","recipient":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgp0ctjdj","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq","uri":"https://google.com/token-1.json","uri_hash":"uriHash"}}`
 	require.Equal(t, expected, string(sortedBytes))
 }
 
@@ -121,7 +121,7 @@ func TestMsgMsgBurnNFTValidateBasicMethod(t *testing.T) {
 func TestMsgBurnNFTGetSignBytesMethod(t *testing.T) {
 	newMsgBurnNFT := types.NewMsgBurnNFT(address.String(), id, denom)
 	sortedBytes := newMsgBurnNFT.GetSignBytes()
-	expected := `{"type":"irismod/nft/MsgBurnNFT","value":{"denom_id":"denom","id":"id1","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq"}}`
+	expected := `{"type":"furymod/nft/MsgBurnNFT","value":{"denom_id":"denom","id":"id1","sender":"cosmos15ky9du8a2wlstz6fpx3p4mqpjyrm5cgqjwl8sq"}}`
 	require.Equal(t, expected, string(sortedBytes))
 }
 

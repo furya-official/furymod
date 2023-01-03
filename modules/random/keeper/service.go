@@ -10,9 +10,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/irisnet/irismod/modules/random/types"
-	"github.com/irisnet/irismod/modules/service/exported"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	"github.com/furya-official/furymod/modules/random/types"
+	"github.com/furya-official/furymod/modules/service/exported"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
 )
 
 // RequestService requests the service for the oracle seed

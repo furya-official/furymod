@@ -16,12 +16,12 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/rest"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	randomcli "github.com/irisnet/irismod/modules/random/client/cli"
-	randomtestutil "github.com/irisnet/irismod/modules/random/client/testutil"
-	randomtypes "github.com/irisnet/irismod/modules/random/types"
-	servicecli "github.com/irisnet/irismod/modules/service/client/cli"
-	servicetestutil "github.com/irisnet/irismod/modules/service/client/testutil"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	randomcli "github.com/furya-official/furymod/modules/random/client/cli"
+	randomtestutil "github.com/furya-official/furymod/modules/random/client/testutil"
+	randomtypes "github.com/furya-official/furymod/modules/random/types"
+	servicecli "github.com/furya-official/furymod/modules/service/client/cli"
+	servicetestutil "github.com/furya-official/furymod/modules/service/client/testutil"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

@@ -9,7 +9,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/irisnet/irismod/modules/service/types"
+	"github.com/furya-official/furymod/modules/service/types"
 )
 
 // NewQuerier creates a new service Querier instance

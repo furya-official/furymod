@@ -11,6 +11,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
 	"github.com/irisnet/irismod/modules/mt/types"
+	"github.com/bianjieai/tibc-go/modules/tibc/apps/mt_transfer/types"
 )
 
 // Keeper maintains the link to data storage and exposes getter/setter methods for the various parts of the state machine
@@ -29,7 +30,7 @@ func NewKeeper(cdc codec.Codec, storeKey storetypes.StoreKey) Keeper {
 
 // Logger returns a module-specific logger.
 func (k Keeper) Logger(ctx sdk.Context) log.Logger {
-	return ctx.Logger().With("module", fmt.Sprintf("irismod/%s", types.ModuleName))
+	return ctx.Logger().With("module", fmt.Sprintf("furymod/%s", types.ModuleName))
 }
 
 // IssueDenom issues a denom according to the given params

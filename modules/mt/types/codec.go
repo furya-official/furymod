@@ -26,15 +26,15 @@ func init() {
 
 // RegisterLegacyAminoCodec concrete types on codec
 func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
-	cdc.RegisterConcrete(&MsgIssueDenom{}, "irismod/mt/MsgIssueDenom", nil)
-	cdc.RegisterConcrete(&MsgTransferMT{}, "irismod/mt/MsgTransferMT", nil)
-	cdc.RegisterConcrete(&MsgEditMT{}, "irismod/mt/MsgEditMT", nil)
-	cdc.RegisterConcrete(&MsgMintMT{}, "irismod/mt/MsgMintMT", nil)
-	cdc.RegisterConcrete(&MsgBurnMT{}, "irismod/mt/MsgBurnMT", nil)
-	cdc.RegisterConcrete(&MsgTransferDenom{}, "irismod/mt/MsgTransferDenom", nil)
+	cdc.RegisterConcrete(&MsgIssueDenom{}, "furymod/mt/MsgIssueDenom", nil)
+	cdc.RegisterConcrete(&MsgTransferMT{}, "furymod/mt/MsgTransferMT", nil)
+	cdc.RegisterConcrete(&MsgEditMT{}, "furymod/mt/MsgEditMT", nil)
+	cdc.RegisterConcrete(&MsgMintMT{}, "furymod/mt/MsgMintMT", nil)
+	cdc.RegisterConcrete(&MsgBurnMT{}, "furymod/mt/MsgBurnMT", nil)
+	cdc.RegisterConcrete(&MsgTransferDenom{}, "furymod/mt/MsgTransferDenom", nil)
 
 	cdc.RegisterInterface((*exported.MT)(nil), nil)
-	cdc.RegisterConcrete(&MT{}, "irismod/mt/MT", nil)
+	cdc.RegisterConcrete(&MT{}, "furymod/mt/MT", nil)
 }
 
 func RegisterInterfaces(registry types.InterfaceRegistry) {

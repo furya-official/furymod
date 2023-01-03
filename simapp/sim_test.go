@@ -34,15 +34,15 @@ import (
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
-	htlctypes "github.com/irisnet/irismod/modules/htlc/types"
+	coinswaptypes "github.com/furya-official/furymod/modules/coinswap/types"
+	htlctypes "github.com/furya-official/furymod/modules/htlc/types"
 	mttypes "github.com/irisnet/irismod/modules/mt/types"
 	nfttypes "github.com/irisnet/irismod/modules/nft/types"
-	oracletypes "github.com/irisnet/irismod/modules/oracle/types"
-	randomtypes "github.com/irisnet/irismod/modules/random/types"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
-	tokentypes "github.com/irisnet/irismod/modules/token/types"
-	"github.com/irisnet/irismod/simapp/helpers"
+	oracletypes "github.com/furya-official/furymod/modules/oracle/types"
+	randomtypes "github.com/furya-official/furymod/modules/random/types"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
+	tokentypes "github.com/furya-official/furymod/modules/token/types"
+	"github.com/furya-official/furymod/simapp/helpers"
 )
 
 // Get flags every time the simulator is run
@@ -199,7 +199,7 @@ func TestAppImportExport(t *testing.T) {
 		{app.keys[evidencetypes.StoreKey], newApp.keys[evidencetypes.StoreKey], [][]byte{}},
 		{app.keys[capabilitytypes.StoreKey], newApp.keys[capabilitytypes.StoreKey], [][]byte{}},
 
-		// check irismod module
+		// check furymod module
 		{app.keys[tokentypes.StoreKey], newApp.keys[tokentypes.StoreKey], [][]byte{}},
 		{app.keys[oracletypes.StoreKey], newApp.keys[oracletypes.StoreKey], [][]byte{}},
 		//mt.Supply is InitSupply, can be not equal to TotalSupply

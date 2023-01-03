@@ -19,7 +19,7 @@ import (
 	"github.com/irisnet/irismod/modules/nft/keeper"
 	v2 "github.com/irisnet/irismod/modules/nft/migrations/v2"
 	"github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/simapp"
+	"github.com/furya-official/furymod/simapp"
 )
 
 func TestMigrate(t *testing.T) {

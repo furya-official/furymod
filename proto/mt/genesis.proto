@@ -1,5 +1,5 @@
 syntax = "proto3";
-package irismod.mt;
+package furymod.mt;
 
 import "gogoproto/gogo.proto";
 import "mt/mt.proto";

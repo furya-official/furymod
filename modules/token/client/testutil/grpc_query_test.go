@@ -14,9 +14,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/rest"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	tokencli "github.com/irisnet/irismod/modules/token/client/cli"
-	tokentestutil "github.com/irisnet/irismod/modules/token/client/testutil"
-	tokentypes "github.com/irisnet/irismod/modules/token/types"
+	tokencli "github.com/furya-official/furymod/modules/token/client/cli"
+	tokentestutil "github.com/furya-official/furymod/modules/token/client/testutil"
+	tokentypes "github.com/furya-official/furymod/modules/token/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	randomcli "github.com/irisnet/irismod/modules/random/client/cli"
+	randomcli "github.com/furya-official/furymod/modules/random/client/cli"
 )
 
 // MsgRedelegateExec creates a redelegate message.

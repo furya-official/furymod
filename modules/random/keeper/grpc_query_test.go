@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/irisnet/irismod/modules/random/types"
+	"github.com/furya-official/furymod/modules/random/types"
 )
 
 func (suite *KeeperTestSuite) TestGRPCQueryRandom() {

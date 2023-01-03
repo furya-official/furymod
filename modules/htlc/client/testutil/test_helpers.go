@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	htlccli "github.com/irisnet/irismod/modules/htlc/client/cli"
+	htlccli "github.com/furya-official/furymod/modules/htlc/client/cli"
 )
 
 // MsgRedelegateExec creates a redelegate message.

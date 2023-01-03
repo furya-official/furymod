@@ -20,10 +20,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
 
-	servicecli "github.com/irisnet/irismod/modules/service/client/cli"
-	servicetestutil "github.com/irisnet/irismod/modules/service/client/testutil"
-	"github.com/irisnet/irismod/modules/service/types"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	servicecli "github.com/furya-official/furymod/modules/service/client/cli"
+	servicetestutil "github.com/furya-official/furymod/modules/service/client/testutil"
+	"github.com/furya-official/furymod/modules/service/types"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

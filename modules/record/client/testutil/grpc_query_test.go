@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/rest"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	recordcli "github.com/irisnet/irismod/modules/record/client/cli"
-	recordtestutil "github.com/irisnet/irismod/modules/record/client/testutil"
-	recordtypes "github.com/irisnet/irismod/modules/record/types"
+	recordcli "github.com/furya-official/furymod/modules/record/client/cli"
+	recordtestutil "github.com/furya-official/furymod/modules/record/client/testutil"
+	recordtypes "github.com/furya-official/furymod/modules/record/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

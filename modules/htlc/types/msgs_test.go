@@ -12,7 +12,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/irisnet/irismod/modules/htlc/types"
+	"github.com/furya-official/furymod/modules/htlc/types"
 )
 
 var (

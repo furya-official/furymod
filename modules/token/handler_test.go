@@ -13,9 +13,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	bankkeeper "github.com/cosmos/cosmos-sdk/x/bank/keeper"
 
-	tokenmodule "github.com/irisnet/irismod/modules/token"
-	tokenkeeper "github.com/irisnet/irismod/modules/token/keeper"
-	"github.com/irisnet/irismod/modules/token/types"
+	tokenmodule "github.com/furya-official/furymod/modules/token"
+	tokenkeeper "github.com/furya-official/furymod/modules/token/keeper"
+	"github.com/furya-official/furymod/modules/token/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

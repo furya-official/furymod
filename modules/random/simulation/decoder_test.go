@@ -11,8 +11,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/irisnet/irismod/modules/random/simulation"
-	"github.com/irisnet/irismod/modules/random/types"
+	"github.com/furya-official/furymod/modules/random/simulation"
+	"github.com/furya-official/furymod/modules/random/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

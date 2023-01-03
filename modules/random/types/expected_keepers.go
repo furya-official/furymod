@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	service "github.com/irisnet/irismod/modules/service/exported"
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	service "github.com/furya-official/furymod/modules/service/exported"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
 )
 
 // accountKeeper defines the expected account keeper used for simulations (noalias)

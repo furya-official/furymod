@@ -2,9 +2,9 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v1 "github.com/irisnet/irismod/modules/coinswap/migrations/v1"
-	v2 "github.com/irisnet/irismod/modules/coinswap/migrations/v2"
-	v3 "github.com/irisnet/irismod/modules/coinswap/migrations/v3"
+	v1 "github.com/furya-official/furymod/modules/coinswap/migrations/v1"
+	v2 "github.com/furya-official/furymod/modules/coinswap/migrations/v2"
+	v3 "github.com/furya-official/furymod/modules/coinswap/migrations/v3"
 )
 
 // Migrator is a struct for handling in-place store migrations.

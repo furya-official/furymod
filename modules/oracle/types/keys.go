@@ -3,7 +3,7 @@ package types
 import (
 	"encoding/binary"
 
-	servicetypes "github.com/irisnet/irismod/modules/service/types"
+	servicetypes "github.com/furya-official/furymod/modules/service/types"
 )
 
 // nolint

@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil/rest"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	farmcli "github.com/irisnet/irismod/modules/farm/client/cli"
-	"github.com/irisnet/irismod/modules/farm/client/testutil"
-	farmtypes "github.com/irisnet/irismod/modules/farm/types"
+	farmcli "github.com/furya-official/furymod/modules/farm/client/cli"
+	"github.com/furya-official/furymod/modules/farm/client/testutil"
+	farmtypes "github.com/furya-official/furymod/modules/farm/types"
 	"github.com/irisnet/irismod/simapp"
 )
 

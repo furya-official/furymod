@@ -19,10 +19,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/irisnet/irismod/modules/token/client/cli"
-	"github.com/irisnet/irismod/modules/token/keeper"
-	"github.com/irisnet/irismod/modules/token/simulation"
-	"github.com/irisnet/irismod/modules/token/types"
+	"github.com/furya-official/furymod/modules/token/client/cli"
+	"github.com/furya-official/furymod/modules/token/keeper"
+	"github.com/furya-official/furymod/modules/token/simulation"
+	"github.com/furya-official/furymod/modules/token/types"
 )
 
 var (

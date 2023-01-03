@@ -18,9 +18,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/irisnet/irismod/modules/coinswap/keeper"
-	"github.com/irisnet/irismod/modules/coinswap/simulation"
-	"github.com/irisnet/irismod/modules/coinswap/types"
+	"github.com/furya-official/furymod/modules/coinswap/keeper"
+	"github.com/furya-official/furymod/modules/coinswap/simulation"
+	"github.com/furya-official/furymod/modules/coinswap/types"
 )
 
 var (

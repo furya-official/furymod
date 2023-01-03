@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/irisnet/irismod/modules/record/keeper"
-	"github.com/irisnet/irismod/modules/record/types"
+	"github.com/furya-official/furymod/modules/record/keeper"
+	"github.com/furya-official/furymod/modules/record/types"
 )
 
 // NewHandler returns a handler for all "record" type messages.

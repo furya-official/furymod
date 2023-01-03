@@ -15,7 +15,7 @@ import (
 
 	"github.com/irisnet/irismod/modules/nft/keeper"
 	"github.com/irisnet/irismod/modules/nft/types"
-	"github.com/irisnet/irismod/simapp"
+	"github.com/furya-official/furymod/simapp"
 )
 
 var (

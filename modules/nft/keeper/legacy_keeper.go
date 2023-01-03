@@ -5,6 +5,7 @@ import (
 
 	"github.com/irisnet/irismod/modules/nft/exported"
 	"github.com/irisnet/irismod/modules/nft/types"
+	"github.com/bianjieai/tibc-go/modules/tibc/apps/nft_transfer/types"
 )
 
 type LegacyKeeper struct {

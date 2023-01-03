@@ -5,7 +5,7 @@ import "google/api/annotations.proto";
 import "gogoproto/gogo.proto";
 import "htlc/htlc.proto";
 
-option go_package = "github.com/irisnet/irismod/modules/htlc/types";
+option go_package = "github.com/furya-official/furymod/modules/htlc/types";
 
 // Query provides defines the gRPC querier service
 service Query {

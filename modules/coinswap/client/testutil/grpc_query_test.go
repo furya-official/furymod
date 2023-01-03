@@ -21,9 +21,9 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	coinswaptypes "github.com/irisnet/irismod/modules/coinswap/types"
-	tokencli "github.com/irisnet/irismod/modules/token/client/cli"
-	tokentestutil "github.com/irisnet/irismod/modules/token/client/testutil"
+	coinswaptypes "github.com/furya-official/furymod/modules/coinswap/types"
+	tokencli "github.com/furya-official/furymod/modules/token/client/cli"
+	tokentestutil "github.com/furya-official/furymod/modules/token/client/testutil"
 	"github.com/irisnet/irismod/simapp"
 )
 

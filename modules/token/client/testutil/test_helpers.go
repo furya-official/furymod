@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/testutil"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
 
-	tokencli "github.com/irisnet/irismod/modules/token/client/cli"
+	tokencli "github.com/furya-official/furymod/modules/token/client/cli"
 )
 
 func IssueTokenExec(clientCtx client.Context, from string, extraArgs ...string) (testutil.BufferWriter, error) {

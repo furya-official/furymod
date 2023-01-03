@@ -6,7 +6,7 @@ import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 
-option go_package = "github.com/irisnet/irismod/modules/coinswap/types";
+option go_package = "github.com/furya-official/furymod/modules/coinswap/types";
 
 // Query creates service with coinswap as rpc
 service Query {

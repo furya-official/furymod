@@ -14,7 +14,7 @@ import (
 	"github.com/tidwall/gjson"
 
 	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/irisnet/irismod/simapp"
+	"github.com/furya-official/furymod/simapp"
 	"github.com/stretchr/testify/suite"
 )
 
@@ -103,7 +103,7 @@ func (s *IntegrationTestSuite) TestMT() {
 
 	//Denom
 	respType = proto.Message(&mttypes.QueryDenomResponse{})
-	url := fmt.Sprintf("%s/irismod/mt/denoms/%s", baseURL, denomID)
+	url := fmt.Sprintf("%s/furymod/mt/denoms/%s", baseURL, denomID)
 	resp, err := rest.GetRequest(url)
 	s.Require().NoError(err)
 	s.Require().NoError(val.ClientCtx.Codec.UnmarshalJSON(resp, respType))
@@ -115,7 +115,7 @@ func (s *IntegrationTestSuite) TestMT() {
 
 	//Denoms
 	respType = proto.Message(&mttypes.QueryDenomsResponse{})
-	url = fmt.Sprintf("%s/irismod/mt/denoms", baseURL)
+	url = fmt.Sprintf("%s/furymod/mt/denoms", baseURL)
 	resp, err = rest.GetRequest(url)
 
 	s.Require().NoError(err)
@@ -127,7 +127,7 @@ func (s *IntegrationTestSuite) TestMT() {
 
 	//MTSupply
 	respType = proto.Message(&mttypes.QueryMTSupplyResponse{})
-	url = fmt.Sprintf("%s/irismod/mt/mts/%s/%s/supply", baseURL, denomID, mtID)
+	url = fmt.Sprintf("%s/furymod/mt/mts/%s/%s/supply", baseURL, denomID, mtID)
 	resp, err = rest.GetRequest(url)
 	s.Require().NoError(err)
 	s.Require().NoError(val.ClientCtx.Codec.UnmarshalJSON(resp, respType))
@@ -137,7 +137,7 @@ func (s *IntegrationTestSuite) TestMT() {
 
 	//MT
 	respType = proto.Message(&mttypes.QueryMTResponse{})
-	url = fmt.Sprintf("%s/irismod/mt/mts/%s/%s", baseURL, denomID, mtID)
+	url = fmt.Sprintf("%s/furymod/mt/mts/%s/%s", baseURL, denomID, mtID)
 	resp, err = rest.GetRequest(url)
 	s.Require().NoError(err)
 	s.Require().NoError(val.ClientCtx.Codec.UnmarshalJSON(resp, respType))
@@ -147,7 +147,7 @@ func (s *IntegrationTestSuite) TestMT() {
 
 	//MTs
 	respType = proto.Message(&mttypes.QueryMTsResponse{})
-	url = fmt.Sprintf("%s/irismod/mt/mts/%s", baseURL, denomID)
+	url = fmt.Sprintf("%s/furymod/mt/mts/%s", baseURL, denomID)
 	resp, err = rest.GetRequest(url)
 	s.Require().NoError(err)
 	s.Require().NoError(val.ClientCtx.Codec.UnmarshalJSON(resp, respType))
