@@ -17,7 +17,7 @@ import (
 
 var (
 	testInitCoinAmt     = sdk.NewInt(100000000_000_000)
-	testPoolDescription = "USDT/IRIS Farm Pool"
+	testPoolDescription = "USDT/FURY Farm Pool"
 	testBeginHeight     = int64(1)
 	testLPTokenDenom    = sdk.DefaultBondDenom
 	testRewardPerBlock  = sdk.NewCoins(sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(1_000_000)))

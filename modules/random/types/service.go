@@ -19,14 +19,14 @@ const (
 		"input": {
 			"$schema": "http://json-schema.org/draft-04/schema#",
 			"title": "random-seed-input-body",
-			"description": "IRIS Hub Random Seed Input Body Schema",
+			"description": "FURY Hub Random Seed Input Body Schema",
 			"type": "object",
 			"additionalProperties": false
 		},
 		"output": {
 			"$schema": "http://json-schema.org/draft-04/schema#",
 			"title": "random-seed-output-body",
-			"description": "IRIS Hub Random Seed Output Body Schema",
+			"description": "FURY Hub Random Seed Output Body Schema",
 			"type": "object",
 			"properties": {
 				"seed": {

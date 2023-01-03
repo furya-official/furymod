@@ -605,7 +605,7 @@ func SimulateMsgRemoveUnilateralLiquidity(k keeper.Keeper, ak types.AccountKeepe
 			return simtypes.NoOpMsg(types.ModuleName, types.TypeMsgRemoveUnilateralLiquidity, "insufficient funds"), nil, nil
 		}
 
-		// pick a pool: if target token is iris, select the pool-1
+		// pick a pool: if target token is fury, select the pool-1
 		standardDenom := k.GetStandardDenom(ctx)
 		if targetToken.Denom == standardDenom {
 			return simtypes.NoOpMsg(types.ModuleName, types.TypeMsgRemoveUnilateralLiquidity, "tokenDenom should not be standardDenom"), nil, err

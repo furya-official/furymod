@@ -11,7 +11,7 @@ import (
 
 var (
 	token = Token{
-		Symbol:        "iris",
+		Symbol:        "fury",
 		Name:          "irisnet",
 		Scale:         18,
 		MinUnit:       "atto",

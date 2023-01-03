@@ -24,13 +24,13 @@ func TestMsgSwapOrder_ValidateBasic(t *testing.T) {
 		fields  fields
 		wantErr bool
 	}{
-		{name: "right test case", wantErr: false, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("iris", 1000)}}},
-		{name: "invalid input sender", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: "", Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("iris", 1000)}}},
-		{name: "invalid input coin  denom", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("131stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("iris", 1000)}}},
-		{name: "invalid input coin amount", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", -1000)}, Output: Output{Address: sender, Coin: buildCoin("iris", 1000)}}},
-		{name: "invalid output sender", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: "", Coin: buildCoin("iris", 1000)}}},
+		{name: "right test case", wantErr: false, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("fury", 1000)}}},
+		{name: "invalid input sender", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: "", Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("fury", 1000)}}},
+		{name: "invalid input coin  denom", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("131stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("fury", 1000)}}},
+		{name: "invalid input coin amount", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", -1000)}, Output: Output{Address: sender, Coin: buildCoin("fury", 1000)}}},
+		{name: "invalid output sender", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: "", Coin: buildCoin("fury", 1000)}}},
 		{name: "invalid output coin denom", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("131iris", 1000)}}},
-		{name: "invalid output coin amount", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("iris", -1000)}}},
+		{name: "invalid output coin amount", wantErr: true, fields: fields{IsBuyOrder: true, Deadline: 10, Input: Input{Address: sender, Coin: buildCoin("stake", 1000)}, Output: Output{Address: sender, Coin: buildCoin("fury", -1000)}}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -9,7 +9,7 @@ parent:
 
 ## Abstract
 
-The service module implements the IRIS Service model, which bridges the gap between the blockchain world and the conventional application world. It formalizes off-chain service definition and binding (provider registration), facilitates invocation and interaction with those services, and mediates service governance process (profiling and dispute resolution).
+The service module implements the FURY Service model, which bridges the gap between the blockchain world and the conventional application world. It formalizes off-chain service definition and binding (provider registration), facilitates invocation and interaction with those services, and mediates service governance process (profiling and dispute resolution).
 
 ## Contents
 
