@@ -151,7 +151,7 @@ func (suite *KeeperTestSuite) TestDestroyPool() {
 
 	rewardAdded := sdk.NewCoins(
 		sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(10_000_000)),
-		sdk.NewCoin("uiris", sdk.NewInt(10_000_000)),
+		sdk.NewCoin("ufury", sdk.NewInt(10_000_000)),
 	)
 	err = suite.keeper.AdjustPool(newCtx,
 		p.Id,
@@ -183,7 +183,7 @@ func (suite *KeeperTestSuite) TestAppendReward() {
 	//panic with adding new token as reward
 	rewardAdded := sdk.NewCoins(
 		sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(10_000_000)),
-		sdk.NewCoin("uiris", sdk.NewInt(10_000_000)),
+		sdk.NewCoin("ufury", sdk.NewInt(10_000_000)),
 	)
 	err = suite.keeper.AdjustPool(ctx,
 		p.Id,

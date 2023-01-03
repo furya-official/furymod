@@ -11,7 +11,7 @@ import (
 // Parameter store keys
 var (
 	KeyFee                 = []byte("Fee") // fee key
-	DefaultPoolCreationFee = sdk.NewCoin("uiris", sdkmath.NewIntWithDecimal(5000, 6))
+	DefaultPoolCreationFee = sdk.NewCoin("ufury", sdkmath.NewIntWithDecimal(5000, 6))
 	DefaultTaxRate         = sdk.NewDecWithPrec(4, 1)
 )
 

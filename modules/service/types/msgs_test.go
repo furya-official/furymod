@@ -36,7 +36,7 @@ var (
 
 	testConsumer      = sdk.AccAddress(tmhash.SumTruncated([]byte("test-consumer"))).String()
 	testProviders     = []string{testProvider}
-	testInput         = `{"header":{},"body":{"pair":"iris-usdt"}}`
+	testInput         = `{"header":{},"body":{"pair":"fury-usdt"}}`
 	testServiceFeeCap = sdk.NewCoins(testCoin2)
 	testTimeout       = int64(100)
 	testRepeatedFreq  = uint64(120)
@@ -607,7 +607,7 @@ func TestMsgCallServiceValidation(t *testing.T) {
 	invalidDenomCoins := sdk.Coins{sdk.Coin{Denom: "eth+min", Amount: sdk.NewInt(1000)}}
 
 	invalidDuplicateProviders := []string{testProvider, testProvider}
-	invalidInput := "iris-usdt"
+	invalidInput := "fury-usdt"
 	invalidTimeout := int64(0)
 	invalidLessRepeatedFreq := uint64(testTimeout) - 10
 	invalidRepeatedTotal1 := int64(-2)
@@ -717,7 +717,7 @@ func TestMsgCallServiceGetSignBytes(t *testing.T) {
 	)
 	res := msg.GetSignBytes()
 
-	expected := `{"type":"irismod/service/MsgCallService","value":{"consumer":"cosmos1d8ydkv60gkj3sc98lvnxpddlfwwluvp6jc59a0","input":"{\"header\":{},\"body\":{\"pair\":\"iris-usdt\"}}","providers":["cosmos10yajkmnug9d2nvccgs7ul3xkur0l9as348gmwe"],"repeated":true,"repeated_frequency":"120","repeated_total":"100","service_fee_cap":[{"amount":"100","denom":"stake"}],"service_name":"test-service","timeout":"100"}}`
+	expected := `{"type":"irismod/service/MsgCallService","value":{"consumer":"cosmos1d8ydkv60gkj3sc98lvnxpddlfwwluvp6jc59a0","input":"{\"header\":{},\"body\":{\"pair\":\"fury-usdt\"}}","providers":["cosmos10yajkmnug9d2nvccgs7ul3xkur0l9as348gmwe"],"repeated":true,"repeated_frequency":"120","repeated_total":"100","service_fee_cap":[{"amount":"100","denom":"stake"}],"service_name":"test-service","timeout":"100"}}`
 	require.Equal(t, expected, string(res))
 }
 

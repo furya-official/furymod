@@ -254,7 +254,7 @@ const (
 		},
 		"properties": {
 			"price": {
-				"description": "base price in min unit, e.g. 5uiris",
+				"description": "base price in min unit, e.g. 5ufury",
 				"type": "string",
 				"pattern": "^\\d+[a-zA-Z][a-zA-Z0-9/]{2,127}$"
 			},

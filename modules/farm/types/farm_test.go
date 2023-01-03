@@ -88,7 +88,7 @@ func TestFarmPool_CaclRewards(t *testing.T) {
 					RewardPerShare: sdk.NewDec(100),
 				},
 				{
-					Reward:         "uiris",
+					Reward:         "ufury",
 					RewardPerShare: sdk.NewDecWithPrec(1, 1),
 				},
 			},
@@ -102,11 +102,11 @@ func TestFarmPool_CaclRewards(t *testing.T) {
 		},
 		wantRewards: sdk.NewCoins(
 			sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(1000)),
-			sdk.NewCoin("uiris", sdk.NewInt(1)),
+			sdk.NewCoin("ufury", sdk.NewInt(1)),
 		),
 		wantDewardDebt: sdk.NewCoins(
 			sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(2000)),
-			sdk.NewCoin("uiris", sdk.NewInt(2)),
+			sdk.NewCoin("ufury", sdk.NewInt(2)),
 		),
 	}, {
 		name: "test case 2",
@@ -117,7 +117,7 @@ func TestFarmPool_CaclRewards(t *testing.T) {
 					RewardPerShare: sdk.NewDec(100),
 				},
 				{
-					Reward:         "uiris",
+					Reward:         "ufury",
 					RewardPerShare: sdk.NewDecWithPrec(10, 1),
 				},
 			},
@@ -127,18 +127,18 @@ func TestFarmPool_CaclRewards(t *testing.T) {
 				Locked: sdk.NewInt(10),
 				RewardDebt: sdk.NewCoins(
 					sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(500)),
-					sdk.NewCoin("uiris", sdk.NewInt(5)),
+					sdk.NewCoin("ufury", sdk.NewInt(5)),
 				),
 			},
 			deltaAmt: sdk.NewInt(10),
 		},
 		wantRewards: sdk.NewCoins(
 			sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(500)),
-			sdk.NewCoin("uiris", sdk.NewInt(5)),
+			sdk.NewCoin("ufury", sdk.NewInt(5)),
 		),
 		wantDewardDebt: sdk.NewCoins(
 			sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(2000)),
-			sdk.NewCoin("uiris", sdk.NewInt(20)),
+			sdk.NewCoin("ufury", sdk.NewInt(20)),
 		),
 	}}
 	for _, tt := range tests {

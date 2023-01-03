@@ -58,7 +58,7 @@ func (s *IntegrationTestSuite) TestRest() {
 	// ---------------------------------------------------------------------------
 
 	creator := val.Address
-	description := "iris-atom farm pool"
+	description := "fury-atom farm pool"
 	startHeight := s.LatestHeight() + 1
 	rewardPerBlock := sdk.NewCoins(sdk.NewCoin(s.cfg.BondDenom, sdk.NewInt(10)))
 	lpTokenDenom := s.cfg.BondDenom
